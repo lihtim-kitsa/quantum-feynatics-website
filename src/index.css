@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #1a1a1a;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --accent: #2563eb;
+  --quantum-blue: rgba(37, 99, 235, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85em;
+  letter-spacing: -0.05em;
+}
+
+/* Minimalist Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+
+.section-padding {
+  padding: 15vh 0;
+}
+
+.border-top { border-top: 1px solid var(--border-color); }
+.border-bottom { border-bottom: 1px solid var(--border-color); }
+
+/* Quantum Elements (Minimalist) */
+.quantum-grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: 
+    linear-gradient(var(--border-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.4;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+}
+
+.bloch-sphere-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  position: relative;
+  display: inline-block;
+}
+.bloch-sphere-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 0; width: 100%; height: 1px;
+  background: var(--text-muted);
+  transform: translateY(-50%);
+}
+.bloch-sphere-icon::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%; width: 1px; height: 100%;
+  background: var(--text-muted);
+  transform: translateX(-50%);
+}
+
+/* Links & Buttons */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.btn-minimal:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

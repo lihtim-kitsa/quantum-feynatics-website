@@ -1,0 +1,38 @@
+.resources-section {
+  background: white;
+}
+
+.resources-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  transition: padding-left 0.3s ease;
+}
+
+.resource-item:hover {
+  padding-left: 20px;
+}
+
+.res-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.res-content h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .resource-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

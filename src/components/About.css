@@ -1,0 +1,38 @@
+.about-section {
+  background: white;
+}
+
+.about-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  gap: 40px;
+  padding: 60px 0;
+  align-items: start;
+}
+
+.about-item .mono {
+  color: var(--text-muted);
+}
+
+.about-item h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.about-item p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .about-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,60 @@
+.focus-section {
+  background: var(--bg-color);
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.focus-item {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.focus-item h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tech-stack-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.tech-slider {
+  position: relative;
+  width: 100%;
+}
+
+.tech-track {
+  display: flex;
+  gap: 60px;
+  animation: slide 20s linear infinite;
+  white-space: nowrap;
+}
+
+.tech-item {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
