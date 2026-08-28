@@ -28,7 +28,8 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: #e0e0e0; /* Minimalist grey fallback */
+  background: #e0e0e0;
+  /* Minimalist grey fallback */
 }
 
 .member-img-wrapper img {
@@ -56,7 +57,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(248, 249, 250, 0.8); /* off-white overlay */
+  background: rgba(248, 249, 250, 0.8);
+  /* off-white overlay */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +67,7 @@
 }
 
 .member-card:hover .img-overlay {
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .member-info {
