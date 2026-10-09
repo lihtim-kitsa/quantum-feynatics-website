@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
 import AOS from 'aos';
@@ -8,13 +8,25 @@ import { AnimatePresence } from 'framer-motion';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Startup from './components/Startup';
 
 // Pages
 import HomePage from './pages/HomePage';
 import EventsPage from './pages/EventsPage';
 
+function shouldShowStartup() {
+  if (window.location.pathname !== '/' || window.location.hash || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
+  try { return sessionStorage.getItem('qf-startup-bb84-v1') !== 'true'; } catch { return false; }
+}
+
 function AppContent() {
   const location = useLocation();
+  const [showStartup, setShowStartup] = useState(shouldShowStartup);
+  const [introFinished, setIntroFinished] = useState(false);
+  const finishStartup = useCallback(() => {
+    setShowStartup(false);
+    setIntroFinished(true);
+  }, []);
 
   useEffect(() => {
     // Initialize Lenis for smooth scrolling
@@ -56,6 +68,8 @@ function AppContent() {
 
   return (
     <>
+      {showStartup && <Startup onComplete={finishStartup} />}
+      <div className={introFinished ? 'site-arrived' : undefined} inert={showStartup}>
       <div className="quantum-grid-bg"></div>
       <Header />
       <main>
@@ -67,6 +81,7 @@ function AppContent() {
         </AnimatePresence>
       </main>
       <Footer />
+      </div>
     </>
   );
 }

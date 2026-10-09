@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&display=swap');
+:root { --bg-color: #f4efe5; --text-color: #302e99; --text-muted: #55517b; --border-color: #3634b845; --accent: #3634b8; --lavender: #c7bdf0; }
+.quantum-grid-bg { display: none; }
+h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; text-transform: uppercase; }
+.container { max-width: 1320px; padding-inline: 6vw; }
+.section-padding { padding-block: 90px; border-bottom: 1px solid var(--border-color); }
+.section-title { font-size: clamp(3rem, 7vw, 6rem); line-height: .95; }
+.header { padding: 18px 0; mix-blend-mode: normal; background: var(--accent); border-bottom: 1px solid #ffffff40; }
+.header-container { max-width: none; color: var(--bg-color); }
+.logo-text { display: flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; line-height: 1; }
+.brand-star { color: var(--lavender); }
+.header-about { font-size: .65rem; letter-spacing: .08em; }
+.menu-trigger { border: 0; padding: 10px 0 10px 16px; background: transparent; color: inherit; font: inherit; }
+.fullscreen-menu { background: var(--lavender); }
+.overlay-nav a { color: var(--accent); font-family: 'Barlow Condensed', sans-serif; font-weight: 800; text-transform: uppercase; }
+.about-section, .projects-section, .resources-section, .footer { background: var(--bg-color); }
+.about-section .container { border: 1px solid var(--border-color); width: 88%; padding: 20px 4vw; border-radius: 24px 0 24px 0; }
+.about-item:first-child { border-top: 0; }
+.about-item h2 { font-size: clamp(2rem, 3.5vw, 3.5rem); }
+.members-section { background: var(--lavender); }
+.member-img-wrapper { border: 1px solid var(--border-color); }
+.member-img-wrapper img { mix-blend-mode: multiply; }
+.member-info h3 { font-size: 1.7rem; }
+.member-card:focus-within .img-overlay { opacity: 1; }
+.focus-section { background: var(--accent); color: var(--bg-color); }
+.focus-section .text-muted, .focus-section .tech-item { color: var(--bg-color); }
+.focus-section .border-top { border-color: #ffffff50; }
+.focus-item h3 { font-size: 2.6rem; }
+.contact-section { background: var(--lavender); }
+.contact-link { overflow-wrap: anywhere; }
+.footer-left h2 { font-size: 1.7rem; }
+.btn-minimal { font-size: .7rem; font-weight: 700; }
+a:focus-visible, button:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+section[id] { scroll-margin-top: 90px; }
+@media(hover: none) { .img-overlay { position: static; opacity: 1; padding: 8px; height: auto; } .member-img-wrapper { aspect-ratio: auto; } .member-img-wrapper img { aspect-ratio: 3/4; display: block; height: auto; } }
+@media(max-width: 600px) { .header-about { font-size: .5rem; } .section-padding { padding-block: 55px; } .about-item { padding-block: 30px; } .members-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; } .member-info h3 { font-size: 1.35rem; } .member-info p { font-size: .75rem; } .hero-rail { font-size: .45rem; } }
+@media(prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } [data-aos] { opacity: 1 !important; transform: none !important; } }

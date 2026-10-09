@@ -1,31 +1,34 @@
-import React from 'react';
 import './Hero.css';
 
-const Hero = () => {
-  return (
-    <section className="hero-section">
-      <div className="container hero-container">
-        <div className="hero-top" data-aos="fade-down">
-          <span className="mono">BPHC / BITS PILANI</span>
-          <div className="bloch-sphere-icon"></div>
-        </div>
-        
-        <h1 className="hero-title">
-          <span className="line" data-aos="fade-up" data-aos-delay="100">Quantum</span>
-          <span className="line" data-aos="fade-up" data-aos-delay="200">Feynatics.</span>
-        </h1>
-        
-        <div className="hero-bottom" data-aos="fade-up" data-aos-delay="300">
-          <p className="hero-desc">
-            Demystifying quantum computing through projects, workshops, and collaborative research.
-          </p>
-          <a href="#about" className="btn-minimal">
-            Explore <span className="arrow">↓</span>
-          </a>
-        </div>
+const Hero = () => (
+  <section className="hero-section">
+    <svg width="0" height="0" aria-hidden="true" style={{ position: 'absolute' }}>
+      <defs>
+        <filter id="feynman-brand-blue" colorInterpolationFilters="sRGB">
+          {/* Map blue ink to #3634b8 and retain white highlights and grain. */}
+          <feColorMatrix type="matrix" values="0 0.7882352941 0 0 0.2117647059  0 0.7960784314 0 0 0.2039215686  0 0.2784313725 0 0 0.7215686275  0 0 0 1 0" />
+        </filter>
+      </defs>
+    </svg>
+    <div className="container">
+      <div className="hero-top mono"><span>THE QUANTUM COLLECTIVE / BITS PILANI HYDERABAD</span><span>EST. IN CURIOSITY</span></div>
+      <div className="hero-stage">
+        <p className="hero-eyebrow mono">INSPIRED BY RICHARD FEYNMAN</p>
+        <h1 className="hero-title"><span>QUANTUM</span><span>FEYNATICS</span></h1>
+        <div className="hero-title hero-title-outline" aria-hidden="true"><span>QUANTUM</span><span>FEYNATICS</span></div>
+        <img className="feynman-portrait" src="/images/feynman-poster.png" alt="Richard Feynman seated before a chalkboard, in a blue and white poster treatment" width="2000" height="2500" fetchPriority="high" />
+        <span className="hero-rail mono">QUESTION EVERYTHING</span>
+        <span className="hero-rail hero-rail-right mono">EXPLORE THE POSSIBLE</span>
+        <span className="hero-caption mono">RICHARD FEYNMAN / A SPIRIT OF CURIOSITY</span>
       </div>
-    </section>
-  );
-};
-
+      <div className="hero-bottom"><p>Demystifying quantum computing through projects, workshops, and collaborative research.</p><a href="#about" className="btn-minimal">Enter the quantum world ↓</a></div>
+    </div>
+    <div className="hero-facts">
+      <div className="quantum-emblem" aria-hidden="true">✳</div>
+      <div><span className="mono">OUR HOME</span><strong>BITS PILANI<br />HYDERABAD CAMPUS</strong></div>
+      <div><span className="mono">OUR APPROACH</span><strong>QUESTION. BUILD.<br />DISCOVER.</strong></div>
+      <div><span className="mono">OUR UNIVERSE</span><strong>SMALL PARTICLES.<br />BIG POSSIBILITIES.</strong></div>
+    </div>
+  </section>
+);
 export default Hero;

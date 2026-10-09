@@ -1,0 +1,33 @@
+.header-menu-open { visibility: hidden; }
+.portrait-menu { position: fixed; inset: 0; z-index: 110; overflow: hidden; background: var(--accent); color: #fff; isolation: isolate; }
+.portrait-menu-top { position: absolute; inset: 0 6vw auto; height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 20px; z-index: 4; border-bottom: 1px solid #ffffff40; font-size: .65rem; }
+.portrait-menu-top button { color: #fff; background: transparent; border: 1px solid #ffffff80; padding: 12px 20px; font: inherit; cursor: pointer; }
+.menu-orbit { position: absolute; width: 85vmin; aspect-ratio: 1; border: 1px solid #ffffff30; border-radius: 50%; left: 50%; top: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 0 9vmin #ffffff08, 0 0 0 18vmin #ffffff05; }
+.menu-feynman { position: fixed; left: 50%; bottom: -10%; transform: translateX(-50%); height: 95%; width: 65%; object-fit: contain; object-position: bottom; filter: url(#feynman-brand-blue); pointer-events: none; z-index: 1; }
+.portrait-menu-nav { position: absolute; inset: 86px 0 0; z-index: 2; }
+.portrait-menu-nav ul { list-style: none; }
+.portrait-menu-item { position: absolute; width: 29%; }
+.portrait-menu-item a { display: flex; align-items: center; gap: 16px; padding: 12px 22px; background: var(--bg-color); color: var(--accent); border: 2px solid var(--accent); box-shadow: 7px 7px 0 var(--lavender); font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(2rem, 4.4vw, 6rem); line-height: 1; text-transform: uppercase; transform: rotate(-7deg); transition: transform .2s, background .2s; }
+.portrait-menu-item a:hover, .portrait-menu-item a:focus-visible { opacity: 1; background: var(--lavender); transform: rotate(0deg) translateX(8px); }
+.menu-index { font-size: .7rem; border: 1px solid currentColor; padding: 6px; }
+.menu-link-arrow { margin-left: auto; font-size: .6em; }
+.menu-position-0 { left: 6%; top: 24%; }
+.menu-position-1 { left: 4%; top: 43%; }
+.menu-position-2 { left: 7%; top: 62%; }
+.menu-position-3 { right: 6%; top: 24%; }
+.menu-position-4 { right: 4%; top: 43%; }
+.menu-position-5 { right: 7%; top: 62%; }
+.menu-position-3 a, .menu-position-4 a, .menu-position-5 a { transform: rotate(7deg); }
+.portrait-menu-bottom { position: absolute; bottom: 20px; left: 6vw; z-index: 3; background: var(--accent); padding: 8px; font-size: .6rem; }
+@media(max-width: 700px) {
+ .portrait-menu-top { height: 70px; font-size: .5rem; } .portrait-menu-top > span { max-width: 180px; }
+ .portrait-menu-nav { top: 70px; }
+ .portrait-menu-item { width: 43%; }
+ .portrait-menu-item a { font-size: clamp(1.3rem, 5vw, 2rem); padding: 14px 10px; gap: 8px; box-shadow: 4px 4px 0 var(--lavender); }
+ .menu-index { font-size: .5rem; padding: 4px; }
+ .menu-position-0, .menu-position-1, .menu-position-2 { left: 3%; }
+ .menu-position-3, .menu-position-4, .menu-position-5 { right: 3%; }
+ .menu-position-0, .menu-position-3 { top: 42%; } .menu-position-1, .menu-position-4 { top: 57%; } .menu-position-2, .menu-position-5 { top: 72%; }
+ .menu-feynman { width: 100%; }
+}
+@media(max-height: 500px) and (min-width: 701px) { .portrait-menu-item a { font-size: 2rem; padding-block: 8px; } .menu-position-0, .menu-position-3 { top: 12%; } .menu-position-2, .menu-position-5 { top: 70%; } }

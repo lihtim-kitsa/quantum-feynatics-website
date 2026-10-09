@@ -2,10 +2,8 @@
   background: var(--bg-color);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+.contact-content {
+  max-width: 720px;
 }
 
 .contact-info {
@@ -16,7 +14,7 @@
 
 .contact-info > p {
   font-size: 1.2rem;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .info-block {
@@ -30,40 +28,4 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  padding: 20px 0;
-}
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  background: transparent;
-  border: none;
-  color: var(--text-color);
-  font-family: inherit;
-  font-size: 1.2rem;
-  outline: none;
-  resize: vertical;
-}
-
-.form-group input::placeholder, .form-group textarea::placeholder {
-  color: var(--text-muted);
-}
-
-.mt-20 {
-  margin-top: 20px;
-  align-self: flex-start;
-}
-
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
 }

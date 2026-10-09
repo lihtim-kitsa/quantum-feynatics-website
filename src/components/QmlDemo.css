@@ -1,0 +1,24 @@
+.qml-demo { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; border: 1px solid #ffffff60; padding: clamp(20px, 4vw, 48px); margin-bottom: 80px; border-radius: 24px 0 24px 0; }
+.qml-copy { display: flex; flex-direction: column; gap: 20px; }
+.qml-copy > .mono { font-size: .65rem; }
+.qml-copy h3 { font-size: clamp(2.2rem, 4vw, 4rem); line-height: 1; }
+.qml-copy p { font-size: .95rem; }
+.qml-circuit { border-block: 1px solid #ffffff40; padding-block: 18px; font-size: .7rem; overflow-wrap: anywhere; }
+.qml-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.qml-actions .btn-minimal { color: #fff; border-color: #ffffff80; }
+.qml-actions .btn-minimal:hover { background: #fff; color: var(--accent); }
+.qml-copy .qml-model-note, .qml-reference { font-size: .75rem; line-height: 1.6; }
+.qml-reference { text-decoration: underline; text-underline-offset: 4px; }
+.qml-plot { align-self: center; min-width: 0; }
+.qml-plot svg { display: block; width: 100%; overflow: visible; }
+.qml-axis { stroke: #ffffff50; fill: none; }
+.qml-boundary { stroke: #c7bdf0; stroke-width: 2; stroke-dasharray: 6 6; fill: none; }
+.qml-point { cursor: grab; touch-action: none; fill: #fff; stroke: #fff; stroke-width: 2; }
+.qml-point:active { cursor: grabbing; }
+.qml-class-1 { fill: #c7bdf0; stroke: #c7bdf0; }
+.qml-point .qml-hit { fill: transparent; stroke: transparent; }
+.qml-point:focus-visible .qml-hit { stroke: #fff; stroke-dasharray: 3 3; outline: none; }
+.qml-point.qml-mismatch > :last-child { stroke: #fff; stroke-width: 3; stroke-dasharray: 2 2; }
+.qml-axis-label { fill: #fff; font-size: 12px; }
+.qml-legend { font-size: .55rem; text-align: center; line-height: 1.7; margin-top: 16px; }
+@media(max-width: 900px) { .qml-demo { grid-template-columns: 1fr; } }

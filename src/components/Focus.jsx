@@ -1,5 +1,6 @@
 import React from 'react';
 import './Focus.css';
+import QmlDemo from './QmlDemo';
 
 const Focus = () => {
   return (
@@ -28,6 +29,7 @@ const Focus = () => {
           </div>
         </div>
 
+        <QmlDemo />
         <div className="tech-stack-container border-top" data-aos="fade-up">
           <span className="mono text-muted">FRAMEWORKS & PLATFORMS</span>
           <div className="tech-slider">
