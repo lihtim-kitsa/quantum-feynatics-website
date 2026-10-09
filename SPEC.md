@@ -6,6 +6,7 @@
 - Files: QmlDemo.jsx/css, Focus.jsx. Acceptance: coherent circuit math, bounded pointer coordinates, accessible controls, lint/build. No pushes.
 
 ## Startup animation
+- Title handoff: measure the landing H1 and animate the intro wordmark to its actual viewport position, width, and font size before fading the overlay. Retain Skip/reduced motion and use a new session key for preview. Keep changes local.
 - Current revision: BB84 schematic replaces TF-QKD. Alice sends four qubits to Bob, public basis comparison retains two matching-basis sifted bits; do not label sifted bits a secure final key. New session key permits preview. Retain 3.2s timing, Skip/Escape, reduced motion, and existing page reveal.
 - Revision: TF-QKD-inspired intro replaces dot/rings: Alice/Bob optical pulses travel to Charlie, interference/detection, then team reveal. Stylized schematic, not a protocol simulator. 3.2 seconds, skip/reduced motion/session behavior retained; new session key permits previewing this revision.
 - Reference: Lucamarini et al., Nature 557, 400–403 (2018), https://doi.org/10.1038/s41586-018-0066-6.

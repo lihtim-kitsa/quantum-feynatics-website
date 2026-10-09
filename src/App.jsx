@@ -16,7 +16,7 @@ import EventsPage from './pages/EventsPage';
 
 function shouldShowStartup() {
   if (window.location.pathname !== '/' || window.location.hash || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
-  try { return sessionStorage.getItem('qf-startup-bb84-v1') !== 'true'; } catch { return false; }
+  try { return sessionStorage.getItem('qf-startup-bb84-v2') !== 'true'; } catch { return false; }
 }
 
 function AppContent() {

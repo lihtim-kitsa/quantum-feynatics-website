@@ -1,4 +1,4 @@
-.quantum-startup { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; overflow: hidden; background: #3634b8; color: #fff; animation: startup-exit .3s 2.9s both; }
+.quantum-startup { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; overflow: hidden; background: #3634b8; color: #fff; animation: startup-exit .25s 3.4s both; }
 .tf-scene { width: min(1000px, 88vw); animation: tf-scene-exit .35s 2.05s both; }
 .tf-heading { text-align: center; font-size: .65rem; letter-spacing: .15em; margin-bottom: 80px; }
 .tf-channel { position: relative; height: 200px; }
@@ -15,10 +15,10 @@
 .tf-interference { position: absolute; top: 14px; left: calc(50% - 26px); width: 52px; height: 52px; border: 2px solid #c7bdf0; border-radius: 50%; animation: tf-interfere .9s .75s both; }
 .tf-detector { position: absolute; top: -45px; left: 50%; transform: translateX(-50%); font-size: .6rem; animation: tf-detect .45s 1.45s both; }
 .tf-note { text-align: center; font-size: .6rem; letter-spacing: .12em; }
-.startup-wordmark { position: absolute; display: flex; flex-direction: column; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(3.5rem, 13vw, 15rem); letter-spacing: -.035em; line-height: .84; animation: quantum-resolve .5s 2.25s both; }
+.startup-wordmark { position: absolute; display: flex; flex-direction: column; text-align: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(3.5rem, 13vw, 15rem); letter-spacing: -.035em; line-height: .84; animation: quantum-resolve .4s 2.25s both; }
 .startup-caption { position: absolute; bottom: 15%; font-size: .65rem; letter-spacing: .15em; animation: quantum-resolve .4s 2.4s both; }
 .startup-skip { position: absolute; right: 6vw; top: 28px; padding: 12px 16px; border: 1px solid #ffffff80; background: transparent; color: #fff; cursor: pointer; font-size: .65rem; }
-.site-arrived .hero-stage { animation: landing-resolve .45s ease-out both; }
+.site-arrived .feynman-portrait { animation: landing-resolve .45s ease-out both; }
 @keyframes tf-travel-alice { 0% { left: 7%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { left: 50%; opacity: 0; } }
 @keyframes tf-travel-bob { 0% { left: 93%; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { left: 50%; opacity: 0; } }
 @keyframes tf-interfere { 0% { opacity: 0; transform: scale(.5); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(3); } }
@@ -26,9 +26,9 @@
 @keyframes tf-scene-exit { to { opacity: 0; transform: scale(1.03); } }
 @keyframes quantum-resolve { from { opacity: 0; transform: translateY(12px); filter: blur(8px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
 @keyframes startup-exit { to { opacity: 0; } }
-@keyframes landing-resolve { from { opacity: .5; clip-path: inset(0 0 15%); } to { opacity: 1; clip-path: inset(0); } }
+@keyframes landing-resolve { from { opacity: .6; } to { opacity: 1; } }
 @media(max-width: 600px) { .tf-scene { width: 78vw; } .tf-heading { font-size: .5rem; letter-spacing: .04em; } .tf-node { width: 75px; } .tf-node-icon { width: 54px; height: 54px; margin-block: 13px; } .tf-node .mono { font-size: .4rem; } }
-@media(prefers-reduced-motion: reduce) { .quantum-startup { display: none; } .site-arrived .hero-stage { animation: none; } }
+@media(prefers-reduced-motion: reduce) { .quantum-startup { display: none; } .site-arrived .feynman-portrait { animation: none; } }
 .bb-qubit { position: absolute; top: 25px; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid #c7bdf0; border-radius: 50%; background: #3634b8; color: #fff; box-shadow: 0 0 18px #c7bdf050; font-size: 1.2rem; animation: bb-travel .85s var(--pulse-delay) both ease-in-out; }
 .bb-sifting { display: flex; align-items: center; justify-content: center; gap: clamp(10px, 3vw, 32px); margin-top: -12px; margin-bottom: 25px; animation: quantum-resolve .35s 1.3s both; }
 .bb-row-label { font-size: .5rem; }
