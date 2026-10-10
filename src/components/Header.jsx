@@ -56,7 +56,7 @@ const Header = () => {
       <header className={`header ${menuOpen ? 'header-menu-open' : ''}`}>
         <div className="container header-container">
           <Link to="/" className="logo-text mono"><span aria-label="Quantum Feynatics">QF</span><span className="brand-star" aria-hidden="true">✳</span></Link>
-          <a className="header-about mono" href="/#about">ABOUT THE COLLECTIVE</a>
+          <Link className="header-about mono" to="/#about">ABOUT THE COLLECTIVE</Link>
           <button ref={triggerRef} type="button" className="menu-trigger" onClick={openMenu} aria-expanded={menuOpen} aria-controls="site-menu">
             <span className="mono menu-label">MENU</span><span className="hamburger" aria-hidden="true"><span></span><span></span></span>
           </button>
@@ -78,9 +78,7 @@ const Header = () => {
                     <motion.li className={`portrait-menu-item menu-position-${index}`} key={item}
                       initial={reduceMotion ? false : { opacity: 0, x: index < 3 ? -80 : 80 }} animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: reduceMotion ? 0 : .08 + index * .055, duration: .3 }}>
-                      {item === 'Home' || item === 'Events'
-                        ? <Link to={target} onClick={() => setMenuOpen(false)}>{label}</Link>
-                        : <a href={target} onClick={() => setMenuOpen(false)}>{label}</a>}
+                      <Link to={target} onClick={() => setMenuOpen(false)}>{label}</Link>
                     </motion.li>
                   );
                 })}

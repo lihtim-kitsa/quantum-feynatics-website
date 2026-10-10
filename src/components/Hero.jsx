@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => (
@@ -35,7 +36,7 @@ const Hero = () => (
         <span className="hero-rail hero-rail-right mono">EXPLORE THE POSSIBLE</span>
         <span className="hero-caption mono">RICHARD FEYNMAN / A SPIRIT OF CURIOSITY</span>
       </div>
-      <div className="hero-bottom"><p>Demystifying quantum computing through projects, workshops, and collaborative research.</p><a href="#about" className="btn-minimal">Enter the quantum world ↓</a></div>
+      <div className="hero-bottom"><p>Demystifying quantum computing through projects, workshops, and collaborative research.</p><Link to="/#about" className="btn-minimal">Enter the quantum world ↓</Link></div>
     </div>
     <div className="hero-facts">
       <div className="quantum-emblem" aria-hidden="true">✳</div>

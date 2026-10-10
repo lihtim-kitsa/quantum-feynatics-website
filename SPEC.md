@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Home navigation and smooth scrolling
+- Goal: Home and logo always return to the hero, including repeated clicks on the home route; animate section navigation and wheel scrolling.
+- Files: App.jsx, Header.jsx, Hero.jsx, index.css. Reuse Lenis/AOS; no dependencies.
+- Acceptance: Home from sections/events, repeated section links, header offsets, reduced-motion bypass, cleaned animation frames, passing lint/build.
+
 ## Adaptive hero outlines
 - Goal: White text outlines over blue portrait areas and blue outlines over white portrait highlights.
 - Scope/files: Hero.jsx and Hero.css; preserve the filled title and portrait layout.
