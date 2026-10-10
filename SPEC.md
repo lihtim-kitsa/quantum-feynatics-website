@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Adaptive hero outlines
+- Goal: White text outlines over blue portrait areas and blue outlines over white portrait highlights.
+- Scope/files: Hero.jsx and Hero.css; preserve the filled title and portrait layout.
+- Acceptance: Match the portrait mask to desktop/mobile sizing, keep one accessible H1, and pass lint/build.
+
 ## Interactive QML focus visual
 - Keep BB84 startup. Add a small, dependency-free classifier demo to Our Focus using a classically evaluated ideal one-qubit rotation circuit.
 - Allow pointer dragging and keyboard movement of labeled points, train parameters, show decision boundary and accuracy, and reset. Clearly label the toy model and avoid quantum advantage claims.

@@ -8,6 +8,9 @@
 .hero-title { color: #fff; }
 .hero-title-outline { z-index: 2; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; color: transparent; -webkit-text-fill-color: transparent; -webkit-text-stroke: clamp(1px, .09vw, 2px) #fff; pointer-events: none; user-select: none; }
 .feynman-portrait { filter: url(#feynman-brand-blue); }
+.hero-outline-overlay { position: absolute; inset: 0; z-index: 2; pointer-events: none; user-select: none; }
+.hero-title-outline-blue { -webkit-text-stroke-color: var(--accent); }
+.hero-highlight-mask { x: 17.5%; y: 7%; width: 65%; height: 105%; }
 .feynman-portrait { position: absolute; bottom: -12%; left: 50%; transform: translateX(-50%); width: 65%; height: 105%; object-fit: contain; object-position: bottom; z-index: 1; }
 .hero-rail { position: absolute; left: 0; top: 50%; writing-mode: vertical-rl; font-size: .6rem; letter-spacing: .2em; }
 .hero-rail-right { left: auto; right: 0; }
@@ -22,6 +25,7 @@
 .hero-facts strong { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; line-height: 1; }
 .hero-facts .quantum-emblem { font-size: 7rem; line-height: .8; }
 @media(max-width: 600px) {
+ .hero-highlight-mask { x: -5%; y: 20%; width: 110%; height: 88%; }
  .hero-section { padding-top: 70px; } .hero-top { font-size: .5rem; } .hero-top > :last-child { display: none; }
  .hero-section > .container { min-height: calc(100svh - 70px); }
  .hero-stage { flex: 1 0 490px; min-height: 490px; } .hero-title { top: 105px; font-size: 18vw; }
