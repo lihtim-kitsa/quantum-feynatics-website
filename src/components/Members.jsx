@@ -11,7 +11,7 @@ const Members = () => {
     { name: "Cris Varshith DJ", role: "Feynatic Prime", img: "/images/cri.jpg", linkedin: "https://www.linkedin.com/in/cris-varshith-dj-0b812a260/" },
     { name: "Anvesh Vohra", role: "Feynatic", img: "/images/anvesh.jpeg", linkedin: "https://www.linkedin.com/in/anvesh-vohra-74378516b" },
     { name: "Spandan Mishra", role: "Feynatic", img: "/images/spandan.jpeg", linkedin: "https://www.linkedin.com/in/spandan-mishra-432a9b332" },
-    { name: "Kaushik Karma", role: "Feynatic", img: "/images/kaushik.jpeg", linkedin: "https://www.linkedin.com/in/kaushik-karma/" },
+    { name: "Kaushik Karma", role: "Feynatic", img: "/images/kaushik.png", linkedin: "https://www.linkedin.com/in/kaushik-karma/" },
     { name: "Srinandan Daparthi", role: "Feynatic", img: "/images/Srinandan.jpeg", linkedin: "https://www.linkedin.com/in/srinandan-daparthi" },
     { name: "Rutwek Reddy Lella", role: "Feynatic", img: "/images/rutwek.jpeg", linkedin: "hhttps://www.linkedin.com/in/lella-rutwek-reddy-605532395" }
   ];
