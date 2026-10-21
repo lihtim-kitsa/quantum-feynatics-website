@@ -189,22 +189,6 @@ img {
 
 /* --- END: Custom Paint Blob Cursor (PC Only) --- */
 
-@keyframes wormhole-zoom {
-    from {
-        transform: scale(0.01) translate(-50%, -50%);
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    to {
-        transform: scale(1.5) translate(-50%, -50%);
-        opacity: 0;
-    }
-}
-
 /* --- Announcement Bar --- */
 #announcement-bar {
     background-image: linear-gradient(to right, var(--color-purple-dark), var(--color-blue-dark));
@@ -232,61 +216,14 @@ img {
     color: white;
 }
 
-.stars-bg {
+.wormhole-bg {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     z-index: -2;
-    overflow: hidden;
-    /* --- OPTIMIZATION: Isolate rendering for this element --- */
-    contain: paint;
-}
-
-.stars-bg::before,
-.stars-bg::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200vw;
-    height: 200vh;
-    transform-origin: 0 0;
-    background-repeat: repeat;
-    /* Animating transform and opacity is performant. This is good. */
-    animation: wormhole-zoom 4s ease-in infinite;
-}
-
-.stars-bg::before {
-    background-image:
-        radial-gradient(circle 8px at 19% 84%, white 15%, transparent 100%),
-        radial-gradient(circle 7px at 89% 23%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 34% 45%, white 15%, transparent 100%),
-        radial-gradient(circle 7px at 67% 71%, white 15%, transparent 100%),
-        radial-gradient(circle 8px at 45% 15%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 8% 39%, white 15%, transparent 100%),
-        radial-gradient(circle 7px at 78% 91%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 52% 58%, white 15%, transparent 100%),
-        radial-gradient(circle 7px at 23% 8%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 60% 30%, white 15%, transparent 100%);
-    background-size: 1000px 1000px;
-}
-
-.stars-bg::after {
-    background-image:
-        radial-gradient(circle 6px at 5% 95%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 85% 55%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 39% 29%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 65% 5%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 15% 75%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 75% 45%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 49% 89%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 93% 12%, white 15%, transparent 100%),
-        radial-gradient(circle 5px at 25% 61%, white 15%, transparent 100%),
-        radial-gradient(circle 6px at 59% 41%, white 15%, transparent 100%);
-    background-size: 1400px 1400px;
-    animation-delay: -2s;
+    pointer-events: none;
+    contain: strict;
 }
 
 .aurora-bg {

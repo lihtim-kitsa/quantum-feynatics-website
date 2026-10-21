@@ -1,5 +1,11 @@
 # Quantum Feynatics visual redesign
 
+## Smooth wormhole background
+- Goal: Replace the two visibly looping CSS star layers with a continuous perspective star tunnel and subtle depth rings; preserve the existing purple/blue visual identity and readable content.
+- Files: WormholeBackground.tsx, EventPage.tsx, quantumverse.css. No dependencies.
+- Behavior: Time-based motion, evenly distributed initial particle depths, individual far-plane recycling, gentle curved vanishing point, bounded frame delta, capped pixel ratio and smaller mobile particle count. No React updates in the animation loop.
+- Acceptance: Smooth continuous travel without whole-layer resets; decorative canvas ignores input and accessibility navigation; static rendering for reduced motion; pause on hidden tabs; clean frames/listeners on unmount; lint/typecheck/build and desktop/mobile visual checks pass.
+
 ## Remove Fall Fest visual branding
 - Replace the Qiskit Fall Fest 2025 badge, its accompanying graphic, and centenary artwork with original code-native SVGs for Quantumverse Vol. 4.0 and QML/Qiskit learning. Keep the existing layout, palette, and animation behavior.
 - Files: EventPage.tsx, quantumverse.css, three local SVG assets. Rename the active centenary section identifiers to learning; preserve the Vol. 3.0 archive.

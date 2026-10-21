@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Timeline from "./Timeline";
 import SiteEffects from "./SiteEffects";
+import WormholeBackground from "./WormholeBackground";
 import { asset } from "../data/site";
 import { programme } from "../data/programme";
 
@@ -19,7 +20,7 @@ export default function EventPage() {
         <p>✨ Quantumverse Vol. 4.0 — 23–25 October 2026 ✨</p>
     </div>
     <div className="custom-cursor"></div>
-    <div className="stars-bg"></div>
+    <WormholeBackground />
     <div className="aurora-bg"></div>
 
     <Header />
