@@ -144,7 +144,7 @@ export default function EventPage() {
                         </p>
                     </div>
                     <div className="organizer-card glass-effect">
-                        <img src={asset("IBMQUANTUMLOGO.png")} alt="IBM Quantum Logo" width="300" height="150"
+                        <img src={asset("ibm-logo.svg")} alt="IBM logo" width="320" height="128"
                             loading="lazy" decoding="async" />
                         <p>
                             For Quantumverse Vol. 4.0, we are collaborating with experts from IBM who will
