@@ -35,7 +35,7 @@ export default function EventPage() {
                 <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
                 <p className="hero-date">📅 23–25 October 2026</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Sponsors shown below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">
@@ -174,24 +174,6 @@ export default function EventPage() {
                             <p>{member.role}</p>
                         </div>
                     ))}
-                </div>
-            </div>
-        </section>
-
-        <section id="section-sponsors" className="fade-in-up">
-            <div className="container text-center max-w-5xl">
-                <h2 className="section-title animated-gradient section-title-margin">Sponsors from Vol. 3.0</h2>
-                <div className="sponsor-grid-wrapper">
-                    <div className="organizer-card sponsor-card-light">
-                        <img src={asset("bqp.png")} alt="BQP Logo" width="300" height="150" loading="lazy"
-                            decoding="async" />
-                        <p>
-                            BQP is redefining engineering simulation with BQPhy®, a quantum-powered platform built to
-                            solve the toughest problems in aerospace, space, and defense. Combining advanced solvers
-                            with quantum-inspired algorithms, it delivers unmatched speed and precision on today’s
-                            systems.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>

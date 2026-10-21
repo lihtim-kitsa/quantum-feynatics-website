@@ -40,7 +40,6 @@ export default function Header() {
                             <li><a href="#section-info">Details</a></li>
                             <li><a href="#section-speakers">Speakers</a></li>
                             <li><a href="#section-team">Team</a></li>
-                            <li><a href="#section-sponsors">Sponsors</a></li>
                             <li><a href="#section-timeline">Timeline</a></li>
                             <li><a href="#section-contact">Contact</a></li>
                         </ul>
@@ -68,7 +67,6 @@ export default function Header() {
                     <li><a href="#section-info">Details</a></li>
                     <li><a href="#section-speakers">Speakers</a></li>
                     <li><a href="#section-team">Team</a></li>
-                    <li><a href="#section-sponsors">Sponsors</a></li>
                     <li><a href="#section-timeline">Timeline</a></li>
                     <li><a href="#section-contact">Contact</a></li>
                 </ul>
