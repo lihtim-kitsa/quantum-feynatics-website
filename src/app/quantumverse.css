@@ -1492,8 +1492,8 @@ button:focus-visible {
 }
 .session-topics > div {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 0.5rem 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
     padding: 0.5rem 0;
 }
 .session-topics dt {

@@ -52,12 +52,13 @@ export default function Timeline() {
                               <p>{session.time}</p>
                             </div>
                             {session.presenter && <p className="session-description">Session lead: {session.presenter}</p>}
+                            {session.description && <p className="session-description">{session.description}</p>}
                             {session.topics && (
                               <dl className="session-topics">
                                 {session.topics.map((topic) => (
                                   <div key={topic.title}>
                                     <dt>{topic.title}</dt>
-                                    <dd>{topic.presenter}</dd>
+                                    <dd>{topic.description}</dd>
                                   </div>
                                 ))}
                               </dl>

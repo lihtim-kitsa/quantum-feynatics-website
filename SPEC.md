@@ -1,5 +1,9 @@
 # Quantum Feynatics visual redesign
 
+## Session overviews
+- Replace regular-session lead names with concise learning-topic descriptions, including grouped SDK and Day 3 topics. Retain Dr Kavitha Yogaraj for the QML speaker session and Archit for QML Hands-on. Preserve all dates, times, and accordion behavior.
+- Files: programme.ts, Timeline.tsx, quantumverse.css, README.md. Acceptance: only these two presenter names remain in the programme; descriptions render readably on mobile; lint/typecheck/build pass.
+
 ## Screenshot programme — 23–25 October
 - Goal: Replace placeholder programme with the three supplied day schedules, retaining the original accordion UI.
 - Files: src/app/data/programme.ts, src/app/components/Timeline.tsx, src/app/components/EventPage.tsx, src/app/quantumverse.css, README.md.
