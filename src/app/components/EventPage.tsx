@@ -57,27 +57,27 @@ export default function EventPage() {
                     </div>
                     <div className="glance-images">
                         <div className="image-bubble-1 glass-effect">
-                            <img src={asset("ab25490bfbf765be5f45e3dadd634e0b4d6e447e.png")} width="300" height="300"
-                                loading="lazy" decoding="async" alt="" />
+                            <img src={asset("quantumverse-qubit.svg")} width="300" height="300"
+                                loading="lazy" decoding="async" alt="Quantumverse qubit illustration" />
                         </div>
                         <div className="image-bubble-2 glass-effect">
-                            <img src={asset("e961a20dba783ad6d1bb8e6f267bdf5716184b8a.png")} width="300" height="300"
-                                loading="lazy" decoding="async" alt="" />
+                            <img src={asset("quantumverse-v4-badge.svg")} width="300" height="300"
+                                loading="lazy" decoding="async" alt="Quantumverse Vol. 4.0 — QML and Qiskit, 23–25 October 2026" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="section-century" className="fade-in-up">
+        <section id="section-learning" className="fade-in-up">
             <div className="container section-container">
                 <div className="grid-2-col">
-                    <div className="century-visual">
-                        <img src={asset("c3cd9ec8e37d6da825eb3879c54da504edbbf34e.png")}
-                            alt="Illustration about quantum computing history" width="600" height="400" loading="lazy"
+                    <div className="learning-visual">
+                        <img src={asset("quantumverse-learning.svg")}
+                            alt="Quantumverse circuit and machine learning illustration" width="600" height="400" loading="lazy"
                             decoding="async" />
                     </div>
-                    <div className="century-text">
+                    <div className="learning-text">
                         <h2 className="section-title animated-gradient">From Quantum Concepts to Code
                         </h2>
                         <p className="section-paragraph">

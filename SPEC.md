@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Remove Fall Fest visual branding
+- Replace the Qiskit Fall Fest 2025 badge, its accompanying graphic, and centenary artwork with original code-native SVGs for Quantumverse Vol. 4.0 and QML/Qiskit learning. Keep the existing layout, palette, and animation behavior.
+- Files: EventPage.tsx, quantumverse.css, three local SVG assets. Rename the active centenary section identifiers to learning; preserve the Vol. 3.0 archive.
+- Acceptance: Active page artwork/text has no QFF/Fall Fest/2025/centenary references; SVGs load locally; lint/typecheck/build and browser checks pass.
+
 ## Session overviews
 - Replace regular-session lead names with concise learning-topic descriptions, including grouped SDK and Day 3 topics. Retain Dr Kavitha Yogaraj for the QML speaker session and Archit for QML Hands-on. Preserve all dates, times, and accordion behavior.
 - Files: programme.ts, Timeline.tsx, quantumverse.css, README.md. Acceptance: only these two presenter names remain in the programme; descriptions render readably on mobile; lint/typecheck/build pass.

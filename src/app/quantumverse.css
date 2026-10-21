@@ -615,8 +615,8 @@ section {
     transform: rotate(6deg) scale(1.1);
 }
 
-/* --- Century Section --- */
-.century-visual img {
+/* --- Learning Section --- */
+.learning-visual img {
     border-radius: 1rem;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     width: 100%;
@@ -627,11 +627,11 @@ section {
     will-change: transform;
 }
 
-.century-visual img:hover {
+.learning-visual img:hover {
     transform: scale(1.05);
 }
 
-.century-text {
+.learning-text {
     text-align: center;
 }
 
@@ -1155,7 +1155,7 @@ section {
     }
 
     .glance-text,
-    .century-text {
+    .learning-text {
         text-align: left;
     }
 
@@ -1163,11 +1163,11 @@ section {
         height: 24rem;
     }
 
-    #section-century .century-visual {
+    #section-learning .learning-visual {
         order: -1;
     }
 
-    .century-visual img {
+    .learning-visual img {
         max-width: none;
     }
 
