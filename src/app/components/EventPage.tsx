@@ -2,6 +2,13 @@ import Header from "./Header";
 import Timeline from "./Timeline";
 import SiteEffects from "./SiteEffects";
 import { asset } from "../data/site";
+import { programme } from "../data/programme";
+
+const speakerSessions = programme.flatMap((day) =>
+  day.sessions.flatMap((session) => session.presenter
+    ? [{ name: session.presenter, session: session.title, date: day.date, time: session.time }]
+    : []),
+);
 
 export default function EventPage() {
   return (
@@ -26,7 +33,7 @@ export default function EventPage() {
                 <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
                 <p className="hero-date">📅 23–25 October 2026</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Team and sponsors shown below are from Vol. 3.0 for reference.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">
@@ -236,59 +243,15 @@ export default function EventPage() {
 
         <section id="section-speakers" className="fade-in-up">
             <div className="container text-center max-w-6xl">
-                <h2 className="section-title animated-gradient section-title-margin">Speakers from Vol. 3.0</h2>
-
-                <div className="speaker-keynote">
-                    <h3 className="speaker-section-title">Keynote Speaker</h3>
-                    <div className="speaker-card glass-effect">
-                        <img src={asset("bio photograph.jpeg")} alt="Keynote Speaker Photo"
-                            className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
-                        <div>
-                            <h3>Dr. Debasmita Bhoumik</h3>
-                            <p className="speaker-title">Research Scientist at IBM Quantum, India Research Lab</p>
-                            <p className="speaker-description">
-                                Dr. Debasmita Bhoumik is a Research Scientist at IBM Quantum, IBM India Research Lab where she works in Qiskit development team. She has published in leading journals and
-                                conferences, including IEEE, ACM, and Springer. She is an IEEE and ACM member, ex-visiting faculty at Asutosh College
-                                (affiliated to University of Calcutta), a mentor at QIntern, and has
-                                delivered Quantum Computing and Qiskit tutorials at leading institutes.
-                            </p>
+                <h2 className="section-title animated-gradient section-title-margin">Meet Our Speakers &amp; Session Leads</h2>
+                <div className="speaker-grid">
+                    {speakerSessions.map((speaker) => (
+                        <div className="speaker-card glass-effect" key={speaker.name}>
+                            <h3>{speaker.name}</h3>
+                            <p className="speaker-title">{speaker.session}</p>
+                            <p className="speaker-description">{speaker.date} · {speaker.time} IST</p>
                         </div>
-                    </div>
-                </div>
-
-                <div className="speaker-panel">
-                    <h3 className="speaker-section-title">Expert Panelists</h3>
-                    <div className="speaker-grid">
-                        <div className="speaker-card glass-effect">
-                            <img src={asset("panelist 1.jpg")} alt="Panelist Photo"
-                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
-                            <h3>Jnan Yalla</h3>
-                            <p className="speaker-title">CTO- DataTeach.AI<br />
-                            IBM Qiskit Advocate<br />
-                            QML Researcher</p>
-                        </div>
-                        <div className="speaker-card glass-effect">
-                            <img src={asset("panelist 2.jpg")} alt="Panelist Photo"
-                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
-                            <h3>David Kreplin</h3>
-                            <p className="speaker-title">Professor of Applied quantum computing at Heilbronn University<br />
-                            Senior Scientist for Quantum Computing at Fraunhofer IPA</p>
-                        </div>
-                        <div className="speaker-card glass-effect">
-                            <img src={asset("panelist 3.jpg")} alt="Panelist Photo"
-                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
-                            <h3>Jay Shah</h3>
-                            <p className="speaker-title">Founder and Lead Developer at Quantum Reinforcement Learning (QRL)<br />
-                            Quantum Machine Learning Developer at BosonQ Psi ( BQP)</p>
-                        </div>
-                        <div className="speaker-card glass-effect">
-                            <img src={asset("panelist 4.jpg")} alt="Panelist Photo"
-                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
-                            <h3>Amara Graps</h3>
-                            <p className="speaker-title">FirstQFM<br />
-                            Senior Scientist, Planetary Science Institute</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>
