@@ -9,7 +9,7 @@ export default function EventPage() {
       <SiteEffects />
 
     <div id="announcement-bar">
-        <p>✨ Quantumverse Vol. 4.0 — Details coming soon! ✨</p>
+        <p>✨ Quantumverse Vol. 4.0 — 23–25 October 2026 ✨</p>
     </div>
     <div className="custom-cursor"></div>
     <div className="stars-bg"></div>
@@ -24,9 +24,9 @@ export default function EventPage() {
                     Quantumverse Vol. 4.0
                 </h1>
                 <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
-                <p className="hero-date">📅 Dates to be announced</p>
+                <p className="hero-date">📅 23–25 October 2026</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Expert talks and hands-on sessions. Dates, timings, and speaker lineup coming soon. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Session timings and speaker lineup coming soon. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">

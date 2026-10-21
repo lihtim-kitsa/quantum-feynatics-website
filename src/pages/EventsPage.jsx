@@ -14,12 +14,12 @@ const EventsPage = () => {
 
           <div className="event-item border-bottom" data-aos="fade-up">
             <div className="event-meta">
-              <span className="mono text-muted">DATES TBA</span>
+              <span className="mono text-muted">OCT 23–25 / 2026</span>
               <span className="mono text-muted">VOL. 4.0</span>
             </div>
             <div className="event-content">
               <h2>Quantumverse Vol. 4.0</h2>
-              <p className="text-muted">Talks and hands-on sessions on quantum machine learning (QML) and Qiskit, in collaboration with experts from IBM. Dates, speaker lineup, and registration details coming soon.</p>
+              <p className="text-muted">Talks and hands-on sessions on quantum machine learning (QML) and Qiskit, in collaboration with experts from IBM. 23–25 October 2026. Speaker lineup and registration details coming soon.</p>
             </div>
             <div className="event-action">
               <a href="/quantumverse/v4.html" className="btn-minimal">

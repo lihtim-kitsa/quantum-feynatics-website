@@ -9,7 +9,7 @@ export interface ProgrammeDay {
   sessions: Session[];
 }
 
-// Confirmed session formats; dates, timings, and speaker names remain unannounced.
+// Event dates: 23–25 October 2026. Session timings and speaker names remain unannounced.
 export const programme: ProgrammeDay[] = [
   {
     day: "EXPERT TALKS",
