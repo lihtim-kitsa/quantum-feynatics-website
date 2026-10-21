@@ -1,5 +1,11 @@
 # Quantum Feynatics visual redesign
 
+## Screenshot programme — 23–25 October
+- Goal: Replace placeholder programme with the three supplied day schedules, retaining the original accordion UI.
+- Files: src/app/data/programme.ts, src/app/components/Timeline.tsx, src/app/components/EventPage.tsx, src/app/quantumverse.css, README.md.
+- Interpretation: Day 1/2/3 map to 23/24/25 October 2026; times are local IST. Day 2 SDK topics share 10 am–noon (normalize the screenshot's “10-12am”); Day 3 topics share 9–11 am. Preserve unassigned presenters and gaps, and do not infer IBM affiliations or an algorithm name.
+- Acceptance: All supplied topics, time blocks, and listed names appear; dates are visible on day headers; grouped topics retain individual leads; no stale timing-TBA copy; lint/typecheck/build and browser accordion checks pass.
+
 ## Vol. 4.0 programme correction
 - Goal: Describe the confirmed collaboration with experts from IBM for talks and hands-on sessions on quantum machine learning (QML) and Qiskit.
 - Scope/files: Update src/app/components/EventPage.tsx, src/app/data/programme.ts, src/app/layout.tsx, and README.md; preserve the original UI/styles. Remove Fall Fest/centenary framing and previous-edition hackathon commitments from the active event copy. Keep dates, timings, and speaker names unconfirmed; identify archived profiles clearly.

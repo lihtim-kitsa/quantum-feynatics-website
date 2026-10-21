@@ -12,6 +12,7 @@ export default function Timeline() {
         <h2 className="section-title animated-gradient section-title-margin text-center">
           Your Journey Through The Verse
         </h2>
+        <p className="programme-note">23–25 October 2026 · All times IST</p>
         <div className="timeline-container">
           {programme.map((day, index) => {
             const open = openDay === index;
@@ -27,7 +28,7 @@ export default function Timeline() {
                   aria-controls={panelId}
                   onClick={() => setOpenDay(open ? null : index)}
                 >
-                  <span>{day.day}</span>
+                  <span>{day.day}<small className="timeline-date"><time dateTime={day.dateTime}>{day.date}</time></small></span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="timeline-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
@@ -50,7 +51,17 @@ export default function Timeline() {
                               <h3>{session.title}</h3>
                               <p>{session.time}</p>
                             </div>
-                            {session.description && <p className="session-description">{session.description}</p>}
+                            {session.presenter && <p className="session-description">Session lead: {session.presenter}</p>}
+                            {session.topics && (
+                              <dl className="session-topics">
+                                {session.topics.map((topic) => (
+                                  <div key={topic.title}>
+                                    <dt>{topic.title}</dt>
+                                    <dd>{topic.presenter}</dd>
+                                  </div>
+                                ))}
+                              </dl>
+                            )}
                           </li>
                         ))}
                       </ul>

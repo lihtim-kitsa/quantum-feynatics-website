@@ -26,7 +26,7 @@ export default function EventPage() {
                 <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
                 <p className="hero-date">📅 23–25 October 2026</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Session timings and speaker lineup coming soon. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">
@@ -99,7 +99,7 @@ export default function EventPage() {
                         <ul className="info-list info-list-event">
                             <li>Experts from <strong>IBM</strong> will conduct talks on QML and Qiskit.</li>
                             <li>Explore quantum computing ideas and discuss your questions with the experts.</li>
-                            <li>Speaker names, talk topics, and session timings will be announced.</li>
+                            <li>See the day-wise programme below for session topics, timings, and session leads.</li>
                         </ul>
                     </div>
                     <div className="info-card glass-effect">
@@ -141,8 +141,8 @@ export default function EventPage() {
                             loading="lazy" decoding="async" />
                         <p>
                             For Quantumverse Vol. 4.0, we are collaborating with experts from IBM who will
-                            conduct talks and hands-on sessions on QML and Qiskit. The speaker lineup and
-                            session details will be announced.
+                            conduct talks and hands-on sessions on QML and Qiskit. Explore the day-wise
+                            programme below for session details.
                         </p>
                     </div>
                 </div>

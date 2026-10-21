@@ -1463,3 +1463,49 @@ button:focus-visible {
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .fade-in-up { opacity: 1; transform: none; }
 }
+
+/* Programme details preserve the original day-card styling. */
+.programme-note {
+    text-align: center;
+    color: var(--color-text-dark);
+    font-size: 0.875rem;
+    margin: -1rem 0 2rem;
+}
+.timeline-date {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 0.4rem;
+    color: var(--color-text-medium);
+}
+.session-header {
+    flex-wrap: wrap;
+}
+.session-header h3 {
+    flex: 1 1 13rem;
+    min-width: 0;
+}
+.session-topics {
+    margin: 0.75rem 0 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+.session-topics > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
+}
+.session-topics dt {
+    color: var(--color-text-medium);
+}
+.session-topics dd {
+    margin: 0;
+    color: var(--color-text-dark);
+}
+@media (max-width: 480px) {
+    .session-topics > div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+    }
+}
