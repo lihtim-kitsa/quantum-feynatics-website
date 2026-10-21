@@ -8,12 +8,12 @@ import { siteUrl } from "./data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Quantumverse Vol. 4.0 - A New Era",
-  description: "Quantumverse Vol. 4.0 by Quantum Feynatics at BITS Pilani Hyderabad Campus. Explore quantum workshops, expert sessions, and a hackathon. New edition details coming soon.",
+  description: "Quantumverse Vol. 4.0 by Quantum Feynatics at BITS Pilani Hyderabad Campus, in collaboration with experts from IBM for talks and hands-on sessions on quantum machine learning (QML) and Qiskit.",
   alternates: { canonical: `${siteUrl}/` },
   openGraph: {
     type: "website",
     title: "Quantumverse Vol. 4.0 - A New Era",
-    description: "The next chapter of Quantumverse. Dates and registration to be announced.",
+    description: "Talks and hands-on sessions on QML and Qiskit with experts from IBM. Dates and registration to be announced.",
     url: siteUrl,
     images: [`${siteUrl}/quantumverse/images/quantum-feynatics-group-high-resolution-logo-white-transparent.png`],
   },
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           "@type": "WebPage",
           name: "Quantumverse Vol. 4.0",
           url: siteUrl,
-          description: "The next edition of Quantumverse. Dates and registration to be announced.",
+          description: "Quantumverse Vol. 4.0: talks and hands-on sessions on QML and Qiskit in collaboration with experts from IBM. Dates and registration to be announced.",
           publisher: {
             "@type": "Organization",
             name: "Quantum Feynatics",

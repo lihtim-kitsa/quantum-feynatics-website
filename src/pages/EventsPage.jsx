@@ -19,7 +19,7 @@ const EventsPage = () => {
             </div>
             <div className="event-content">
               <h2>Quantumverse Vol. 4.0</h2>
-              <p className="text-muted">Beyond the classical. Explore the next chapter of Quantumverse: hands-on learning, community conversations, and a quantum hackathon. Programme and registration details coming soon.</p>
+              <p className="text-muted">Talks and hands-on sessions on quantum machine learning (QML) and Qiskit, in collaboration with experts from IBM. Dates, speaker lineup, and registration details coming soon.</p>
             </div>
             <div className="event-action">
               <a href="/quantumverse/v4.html" className="btn-minimal">

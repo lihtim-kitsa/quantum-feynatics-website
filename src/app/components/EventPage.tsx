@@ -23,10 +23,10 @@ export default function EventPage() {
                 <h1 className="hero-title animated-gradient">
                     Quantumverse Vol. 4.0
                 </h1>
-                <h2 className="hero-subtitle">The Next Chapter of Quantumverse</h2>
+                <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
                 <p className="hero-date">📅 Dates to be announced</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Vol. 4.0 details are coming soon. Programme, speakers, team, and partners below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions. Dates, timings, and speaker lineup coming soon. Speaker profiles, team, and sponsors shown below are from Vol. 3.0 for reference.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">
@@ -43,11 +43,9 @@ export default function EventPage() {
                         <h2 className="section-title animated-gradient">Enter the Era of Quantum
                             Utility.</h2>
                         <p className="section-paragraph">
-                            QuantumVerse is a three-day event previously hosted by the Quantum Feynatics Group and
-                            IBM Quantum.
-                            This immersive experience, combining a hands-on workshop with a competitive hackathon, is
-                            your gateway to
-                            the latest advancements where practical quantum applications are finally becoming a reality.
+                            Quantumverse Vol. 4.0 brings the Quantum Feynatics community together in collaboration
+                            with experts from IBM. Through expert-led talks and hands-on sessions, explore
+                            quantum machine learning (QML) and Qiskit, connecting quantum concepts with practical learning.
                         </p>
                     </div>
                     <div className="glance-images">
@@ -73,14 +71,12 @@ export default function EventPage() {
                             decoding="async" />
                     </div>
                     <div className="century-text">
-                        <h2 className="section-title animated-gradient">A Century of Quantum!
+                        <h2 className="section-title animated-gradient">From Quantum Concepts to Code
                         </h2>
                         <p className="section-paragraph">
-                            From abstract theory to tangible technology, from pure curiosity to powerful computation.
-                            Join us at
-                            Qiskit Fall Fest to celebrate 100 years of quantum mechanics and be part of the generation
-                            that builds its
-                            future.
+                            Learn directly from experts from IBM through talks and hands-on sessions on QML and
+                            Qiskit. Bring your questions, explore ideas, and put your learning into practice
+                            with the Quantum Feynatics community.
                         </p>
                     </div>
                 </div>
@@ -89,7 +85,7 @@ export default function EventPage() {
 
         <section id="section-info" className="fade-in-up">
             <div className="container text-center max-w-5xl">
-                <h2 className="section-title animated-gradient section-title-margin">Event & Hackathon Details</h2>
+                <h2 className="section-title animated-gradient section-title-margin">Talks &amp; Hands-on Sessions</h2>
                 <div className="info-grid">
                     <div className="info-card glass-effect">
                         <div className="info-icon info-icon-purple">
@@ -99,18 +95,11 @@ export default function EventPage() {
                                     d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 12l4.179 2.25m0 0l5.571 3 5.571-3m0 0l4.179-2.25L12 9.75l-5.571 2.25z" />
                             </svg>
                         </div>
-                        <h3>Event Details</h3>
+                        <h3>Talks with IBM Experts</h3>
                         <ul className="info-list info-list-event">
-                            <li>The previous edition was held in a <strong>hybrid mode</strong>, with both in-person and
-                                virtual
-                                participation. The in-person sessions were live-streamed and recorded for later
-                                reference.
-                            </li>
-                            <li>All resources used during the workshop were shared regularly with participants
-                                throughout the
-                                duration of the event.</li>
-                            <li>Exclusive <strong>goodies from IBM</strong> were provided only to physical
-                                participants.</li>
+                            <li>Experts from <strong>IBM</strong> will conduct talks on QML and Qiskit.</li>
+                            <li>Explore quantum computing ideas and discuss your questions with the experts.</li>
+                            <li>Speaker names, talk topics, and session timings will be announced.</li>
                         </ul>
                     </div>
                     <div className="info-card glass-effect">
@@ -121,14 +110,11 @@ export default function EventPage() {
                                     d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h3.75" />
                             </svg>
                         </div>
-                        <h3>Hackathon Details</h3>
+                        <h3>Hands-on QML &amp; Qiskit</h3>
                         <ul className="info-list info-list-hackathon">
-                            <li><strong>Both in-person and virtual</strong> participants were eligible to take part
-                                in the
-                                hackathon.</li>
-                            <li>The previous edition offered a total prize pool of 45,000 INR. Vol. 4.0 prizes are to be announced.</li>
-                            <li>The previous problem statement was released on Day 3, after all workshop sessions had been
-                                concluded, and remained open for 12 hours.</li>
+                            <li>Join <strong>hands-on sessions</strong> on quantum machine learning and Qiskit conducted by experts from IBM.</li>
+                            <li>Put concepts into practice through guided learning and experimentation.</li>
+                            <li>Prerequisites, software setup, and participation details will be shared before the sessions.</li>
                         </ul>
                     </div>
                 </div>
@@ -154,9 +140,9 @@ export default function EventPage() {
                         <img src={asset("IBMQUANTUMLOGO.png")} alt="IBM Quantum Logo" width="300" height="150"
                             loading="lazy" decoding="async" />
                         <p>
-                            IBM Quantum is a global leader in advancing quantum computing, making the technology
-                            accessible worldwide
-                            through hardware, software, and tools like Qiskit.
+                            For Quantumverse Vol. 4.0, we are collaborating with experts from IBM who will
+                            conduct talks and hands-on sessions on QML and Qiskit. The speaker lineup and
+                            session details will be announced.
                         </p>
                     </div>
                 </div>
@@ -165,7 +151,7 @@ export default function EventPage() {
 
         <section id="section-team" className="fade-in-up">
             <div className="container text-center max-w-6xl">
-                <h2 className="section-title animated-gradient section-title-margin">Meet the Core Team
+                <h2 className="section-title animated-gradient section-title-margin">Meet the Vol. 3.0 Core Team
                 </h2>
 
                 <div className="lead-organizer">
@@ -232,7 +218,7 @@ export default function EventPage() {
 
         <section id="section-sponsors" className="fade-in-up">
             <div className="container text-center max-w-5xl">
-                <h2 className="section-title animated-gradient section-title-margin">Our Valued Sponsors</h2>
+                <h2 className="section-title animated-gradient section-title-margin">Sponsors from Vol. 3.0</h2>
                 <div className="sponsor-grid-wrapper">
                     <div className="organizer-card sponsor-card-light">
                         <img src={asset("bqp.png")} alt="BQP Logo" width="300" height="150" loading="lazy"
@@ -250,7 +236,7 @@ export default function EventPage() {
 
         <section id="section-speakers" className="fade-in-up">
             <div className="container text-center max-w-6xl">
-                <h2 className="section-title animated-gradient section-title-margin">Meet Our Esteemed Speakers</h2>
+                <h2 className="section-title animated-gradient section-title-margin">Speakers from Vol. 3.0</h2>
 
                 <div className="speaker-keynote">
                     <h3 className="speaker-section-title">Keynote Speaker</h3>
@@ -263,7 +249,7 @@ export default function EventPage() {
                             <p className="speaker-description">
                                 Dr. Debasmita Bhoumik is a Research Scientist at IBM Quantum, IBM India Research Lab where she works in Qiskit development team. She has published in leading journals and
                                 conferences, including IEEE, ACM, and Springer. She is an IEEE and ACM member, ex-visiting faculty at Asutosh College
-                                (affiliated to University of Calcutta), a mentor at QIntern, co-organizer of IBM Qiskit Fall Fest Kolkata 2022, and has
+                                (affiliated to University of Calcutta), a mentor at QIntern, and has
                                 delivered Quantum Computing and Qiskit tutorials at leading institutes.
                             </p>
                         </div>

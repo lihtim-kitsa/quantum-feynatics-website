@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Vol. 4.0 programme correction
+- Goal: Describe the confirmed collaboration with experts from IBM for talks and hands-on sessions on quantum machine learning (QML) and Qiskit.
+- Scope/files: Update src/app/components/EventPage.tsx, src/app/data/programme.ts, src/app/layout.tsx, and README.md; preserve the original UI/styles. Remove Fall Fest/centenary framing and previous-edition hackathon commitments from the active event copy. Keep dates, timings, and speaker names unconfirmed; identify archived profiles clearly.
+- Acceptance: No Fall Fest branding in the active Next.js app; hero, overview, details, collaboration card, programme, and metadata consistently describe QML/Qiskit sessions with IBM experts; lint, typecheck, build, and preview checks pass.
+
 ## Quantumverse Vol. 4.0 — Next.js / TypeScript correction
 - Goal: Implement the original Quantumverse UI/UX in Next.js App Router and strict TypeScript; replace the independent redesign as the active app.
 - Scope: Port the complete original HTML to native TSX sections, reuse the exact original stylesheet, fonts, assets, section order, responsive breakpoints, gradient/background animations, cursor, mobile menu, and timeline accordion. Change edition branding to Vol. 4.0. Preserve previous-edition people/programme content while identifying it as provisional; never activate the old registration link for the new edition.

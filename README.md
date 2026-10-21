@@ -33,6 +33,6 @@ For a normal Next.js server, leave both variables unset. Do not set a base path 
 - `src/app/quantumverse.css` — original stylesheet plus accessibility fallbacks.
 - `public/quantumverse/images/` — original event assets.
 
-Vol. 4.0 dates and registration are unconfirmed. Previous-edition programme, people, prize pool, and partner content are clearly identified as reference material. Update these once confirmed; registration CTAs currently lead to the organizer contact section.
+Vol. 4.0 is a collaboration with experts from IBM for talks and hands-on sessions on quantum machine learning (QML) and Qiskit. Dates, timings, speaker names, and registration are unconfirmed. Previous-edition speaker profiles, team, and sponsors are clearly identified as reference material. Registration CTAs currently lead to the organizer contact section.
 
 The pre-existing club website source is retained in `src/`. Run it with `npm run dev:legacy` or build it with `npm run build:legacy`; these commands are independent of the Next.js microsite.
