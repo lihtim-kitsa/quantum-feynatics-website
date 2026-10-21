@@ -11,7 +11,7 @@ Next.js App Router and strict TypeScript port of the original Quantumverse micro
 - `npm run build` — Next.js production build
 - `npm start` — run the production server
 
-The event is available at `/` and `/quantumverse/v4/`. The previous `/quantumverse/v4.html` and `/quantumverse/quantumverse.html` entry points forward to the Next.js page. Vol. 3.0 remains archived at `/quantumverse/index.html`.
+The club homepage is available at `/`, its Events page at `/events/`, and the Next.js event microsite at `/quantumverse/v4/`. The previous `/quantumverse/v4.html` and `/quantumverse/quantumverse.html` entry points forward to the Next.js page. Vol. 3.0 remains archived at `/quantumverse/index.html`.
 
 For an optional static export to GitHub Pages, set `NEXT_STATIC_EXPORT=true` and `NEXT_PUBLIC_BASE_PATH=/quantum-feynatics`, then publish `out/`. In PowerShell:
 
@@ -22,6 +22,8 @@ npm run build
 ```
 
 For a normal Next.js server, leave both variables unset. Do not set a base path for a root-domain deployment. The asset helper prefixes the configured path, and compatibility redirects use relative URLs.
+
+Vercel deployment is configured in `vercel.json` to use Next.js and its `.next` output. Canonical URLs use `NEXT_PUBLIC_SITE_URL` when configured, otherwise Vercel's production domain, with the original GitHub Pages URL as a local fallback.
 
 ## Source
 
@@ -35,4 +37,4 @@ For a normal Next.js server, leave both variables unset. Do not set a base path 
 
 Vol. 4.0 is a collaboration with experts from IBM for talks and hands-on sessions on quantum machine learning (QML) and Qiskit. The event takes place 23–25 October 2026. The day-wise programme is transcribed from the supplied screenshots, with timings in IST and short topic overviews. Presenter names are retained for the QML speaker session and QML hands-on session. Day 2 SDK topics share a 10 am–noon block; Day 3 topics share a 9–11 am block. Unassigned presenters and timetable gaps remain unfilled. Registration is unconfirmed. Previous-edition team and sponsors are clearly identified as reference material. Registration CTAs currently lead to the organizer contact section.
 
-The pre-existing club website source is retained in `src/`. Run it with `npm run dev:legacy` or build it with `npm run build:legacy`; these commands are independent of the Next.js microsite.
+The existing club website source in `src/` is integrated into the Next.js homepage and Events routes. It can also run independently with `npm run dev:legacy` or build it with `npm run build:legacy`; these commands are independent of the Next.js microsite.

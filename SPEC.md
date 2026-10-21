@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Publish Quantumverse and update the main site
+- Goal: Push the completed event microsite to origin/main and expose it from the main club Events page without replacing the club homepage.
+- Scope/files: Restore / and /events through a typed Next.js wrapper around the existing club app; isolate event CSS/metadata in the /quantumverse/v4 layout. Update Events copy/link, remove the superseded QFF placeholder, and update sitemap/README. Set Vercel's framework/output to Next.js and use its production domain for canonical metadata. Preserve the archived Vol. 3.0 page.
+- Acceptance: / renders the existing club homepage, /events shows the confirmed October dates and current presenters, the event CTA opens /quantumverse/v4/, microsite visuals remain isolated, lint/typecheck/build and browser checks pass, and a normal non-force push to the verified main remote succeeds.
+
 ## Smooth wormhole background
 - Goal: Replace the two visibly looping CSS star layers with a continuous perspective star tunnel and subtle depth rings; preserve the existing purple/blue visual identity and readable content.
 - Files: WormholeBackground.tsx, EventPage.tsx, quantumverse.css. No dependencies.

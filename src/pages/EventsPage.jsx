@@ -19,10 +19,10 @@ const EventsPage = () => {
             </div>
             <div className="event-content">
               <h2>Quantumverse Vol. 4.0</h2>
-              <p className="text-muted">Talks and hands-on sessions on quantum machine learning (QML) and Qiskit, in collaboration with experts from IBM. 23–25 October 2026. Speaker lineup and registration details coming soon.</p>
+              <p className="text-muted">Talks and hands-on sessions on quantum machine learning (QML) and Qiskit, in collaboration with experts from IBM. 23–25 October 2026 at BITS Pilani Hyderabad Campus. Featuring Dr Kavitha Yogaraj’s QML session and Archit’s QML hands-on session. Explore the full three-day programme.</p>
             </div>
             <div className="event-action">
-              <a href="/quantumverse/v4.html" className="btn-minimal">
+              <a href="/quantumverse/v4/" className="btn-minimal">
                 EXPLORE VOL. 4.0 ↗
               </a>
             </div>
@@ -44,21 +44,6 @@ const EventsPage = () => {
             </div>
           </div>
 
-          <div className="event-item border-bottom" data-aos="fade-up" data-aos-delay="100">
-            <div className="event-meta">
-              <span className="mono text-muted">TBA / 2026</span>
-              <span className="mono text-muted">ONLINE</span>
-            </div>
-            <div className="event-content">
-              <h2>Qiskit Fall Fest</h2>
-              <p className="text-muted">Upcoming iteration of the annual IBM Qiskit Fall Fest. Details and registrations will be announced soon.</p>
-            </div>
-            <div className="event-action">
-              <span className="btn-minimal disabled text-muted" style={{ borderColor: 'transparent' }}>
-                COMING SOON
-              </span>
-            </div>
-          </div>
 
         </div>
 

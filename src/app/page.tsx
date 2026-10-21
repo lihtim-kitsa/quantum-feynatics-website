@@ -1,5 +1,5 @@
-import EventPage from "./components/EventPage";
+import MainSite from "./components/MainSite";
 
 export default function Page() {
-  return <EventPage />;
+  return <MainSite />;
 }

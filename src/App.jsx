@@ -100,9 +100,9 @@ function AppContent() {
   );
 }
 
-function App() {
+function App({ basename = '' }) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <AppContent />
     </BrowserRouter>
   );
