@@ -1,0 +1,361 @@
+import Header from "./Header";
+import Timeline from "./Timeline";
+import SiteEffects from "./SiteEffects";
+import { asset } from "../data/site";
+
+export default function EventPage() {
+  return (
+    <>
+      <SiteEffects />
+
+    <div id="announcement-bar">
+        <p>✨ Quantumverse Vol. 4.0 — Details coming soon! ✨</p>
+    </div>
+    <div className="custom-cursor"></div>
+    <div className="stars-bg"></div>
+    <div className="aurora-bg"></div>
+
+    <Header />
+
+    <main>
+        <section id="section-hero" className="fade-in-up">
+            <div className="container hero-container">
+                <h1 className="hero-title animated-gradient">
+                    Quantumverse Vol. 4.0
+                </h1>
+                <h2 className="hero-subtitle">The Next Chapter of Quantumverse</h2>
+                <p className="hero-date">📅 Dates to be announced</p>
+                <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
+                <p className="edition-notice">Vol. 4.0 details are coming soon. Programme, speakers, team, and partners below are from Vol. 3.0 for reference.</p>
+                <div className="hero-cta">
+                    <a href="#section-contact"
+                        className="hero-register-button">
+                        Get Vol. 4.0 Updates
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-glance" className="fade-in-up">
+            <div className="container section-container">
+                <div className="grid-2-col">
+                    <div className="glance-text">
+                        <h2 className="section-title animated-gradient">Enter the Era of Quantum
+                            Utility.</h2>
+                        <p className="section-paragraph">
+                            QuantumVerse is a three-day event previously hosted by the Quantum Feynatics Group and
+                            IBM Quantum.
+                            This immersive experience, combining a hands-on workshop with a competitive hackathon, is
+                            your gateway to
+                            the latest advancements where practical quantum applications are finally becoming a reality.
+                        </p>
+                    </div>
+                    <div className="glance-images">
+                        <div className="image-bubble-1 glass-effect">
+                            <img src={asset("ab25490bfbf765be5f45e3dadd634e0b4d6e447e.png")} width="300" height="300"
+                                loading="lazy" decoding="async" alt="" />
+                        </div>
+                        <div className="image-bubble-2 glass-effect">
+                            <img src={asset("e961a20dba783ad6d1bb8e6f267bdf5716184b8a.png")} width="300" height="300"
+                                loading="lazy" decoding="async" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-century" className="fade-in-up">
+            <div className="container section-container">
+                <div className="grid-2-col">
+                    <div className="century-visual">
+                        <img src={asset("c3cd9ec8e37d6da825eb3879c54da504edbbf34e.png")}
+                            alt="Illustration about quantum computing history" width="600" height="400" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div className="century-text">
+                        <h2 className="section-title animated-gradient">A Century of Quantum!
+                        </h2>
+                        <p className="section-paragraph">
+                            From abstract theory to tangible technology, from pure curiosity to powerful computation.
+                            Join us at
+                            Qiskit Fall Fest to celebrate 100 years of quantum mechanics and be part of the generation
+                            that builds its
+                            future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-info" className="fade-in-up">
+            <div className="container text-center max-w-5xl">
+                <h2 className="section-title animated-gradient section-title-margin">Event & Hackathon Details</h2>
+                <div className="info-grid">
+                    <div className="info-card glass-effect">
+                        <div className="info-icon info-icon-purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 12l4.179 2.25m0 0l5.571 3 5.571-3m0 0l4.179-2.25L12 9.75l-5.571 2.25z" />
+                            </svg>
+                        </div>
+                        <h3>Event Details</h3>
+                        <ul className="info-list info-list-event">
+                            <li>The previous edition was held in a <strong>hybrid mode</strong>, with both in-person and
+                                virtual
+                                participation. The in-person sessions were live-streamed and recorded for later
+                                reference.
+                            </li>
+                            <li>All resources used during the workshop were shared regularly with participants
+                                throughout the
+                                duration of the event.</li>
+                            <li>Exclusive <strong>goodies from IBM</strong> were provided only to physical
+                                participants.</li>
+                        </ul>
+                    </div>
+                    <div className="info-card glass-effect">
+                        <div className="info-icon info-icon-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h3.75" />
+                            </svg>
+                        </div>
+                        <h3>Hackathon Details</h3>
+                        <ul className="info-list info-list-hackathon">
+                            <li><strong>Both in-person and virtual</strong> participants were eligible to take part
+                                in the
+                                hackathon.</li>
+                            <li>The previous edition offered a total prize pool of 45,000 INR. Vol. 4.0 prizes are to be announced.</li>
+                            <li>The previous problem statement was released on Day 3, after all workshop sessions had been
+                                concluded, and remained open for 12 hours.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-organizers" className="fade-in-up">
+            <div className="container text-center max-w-5xl">
+                <h2 className="section-title animated-gradient section-title-margin">The Minds Behind The
+                    Verse</h2>
+                <div className="organizer-grid">
+                    <div className="organizer-card glass-effect">
+                        <img src={asset("quantum-feynatics-group-high-resolution-logo-white-transparent.png")}
+                            alt="Quantum Feynatics Group Logo" width="300" height="75" loading="lazy" decoding="async" />
+                        <p>
+                            Quantum Feynatics Group is dedicated to exploring the fascinating world of quantum tech. We
+                            aim to make
+                            quantum knowledge
+                            accessible while building a vibrant community of innovators.
+                        </p>
+                    </div>
+                    <div className="organizer-card glass-effect">
+                        <img src={asset("IBMQUANTUMLOGO.png")} alt="IBM Quantum Logo" width="300" height="150"
+                            loading="lazy" decoding="async" />
+                        <p>
+                            IBM Quantum is a global leader in advancing quantum computing, making the technology
+                            accessible worldwide
+                            through hardware, software, and tools like Qiskit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-team" className="fade-in-up">
+            <div className="container text-center max-w-6xl">
+                <h2 className="section-title animated-gradient section-title-margin">Meet the Core Team
+                </h2>
+
+                <div className="lead-organizer">
+                    <div className="team-member-card">
+                        <img src={asset("Mithil_Astik.jpg")} alt="Lead Organizer" className="lead-image" width="160"
+                            height="160" loading="lazy" decoding="async" />
+                        <h3>Mithil Astik</h3>
+                        <p>Lead Organizer</p>
+                    </div>
+                </div>
+
+                <div className="team-grid">
+                    <div className="team-member-card">
+                        <img src={asset("Mansee.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Mansee Sukant Rana</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("pratyush.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Pratyush Jha</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("SreePragnya.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Sree Pragnya Ramachandrula</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("cri.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Cris Varshith Dantham Joseph</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("Anshul-Rath.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Anshul Rath</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("Mandar-Kirkire.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Mandar Kirkire</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("Aaditya-Rajput_edited.jpg")} alt="Team Member" width="128" height="128"
+                            loading="lazy" decoding="async" />
+                        <h3>Aaditya Rajput</h3>
+                        <p></p>
+                    </div>
+                    <div className="team-member-card">
+                        <img src={asset("Rajas-Bamb.jpeg")} alt="Team Member" width="128" height="128" loading="lazy"
+                            decoding="async" />
+                        <h3>Rajas Bamb</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-sponsors" className="fade-in-up">
+            <div className="container text-center max-w-5xl">
+                <h2 className="section-title animated-gradient section-title-margin">Our Valued Sponsors</h2>
+                <div className="sponsor-grid-wrapper">
+                    <div className="organizer-card sponsor-card-light">
+                        <img src={asset("bqp.png")} alt="BQP Logo" width="300" height="150" loading="lazy"
+                            decoding="async" />
+                        <p>
+                            BQP is redefining engineering simulation with BQPhy®, a quantum-powered platform built to
+                            solve the toughest problems in aerospace, space, and defense. Combining advanced solvers
+                            with quantum-inspired algorithms, it delivers unmatched speed and precision on today’s
+                            systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-speakers" className="fade-in-up">
+            <div className="container text-center max-w-6xl">
+                <h2 className="section-title animated-gradient section-title-margin">Meet Our Esteemed Speakers</h2>
+
+                <div className="speaker-keynote">
+                    <h3 className="speaker-section-title">Keynote Speaker</h3>
+                    <div className="speaker-card glass-effect">
+                        <img src={asset("bio photograph.jpeg")} alt="Keynote Speaker Photo"
+                            className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
+                        <div>
+                            <h3>Dr. Debasmita Bhoumik</h3>
+                            <p className="speaker-title">Research Scientist at IBM Quantum, India Research Lab</p>
+                            <p className="speaker-description">
+                                Dr. Debasmita Bhoumik is a Research Scientist at IBM Quantum, IBM India Research Lab where she works in Qiskit development team. She has published in leading journals and
+                                conferences, including IEEE, ACM, and Springer. She is an IEEE and ACM member, ex-visiting faculty at Asutosh College
+                                (affiliated to University of Calcutta), a mentor at QIntern, co-organizer of IBM Qiskit Fall Fest Kolkata 2022, and has
+                                delivered Quantum Computing and Qiskit tutorials at leading institutes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="speaker-panel">
+                    <h3 className="speaker-section-title">Expert Panelists</h3>
+                    <div className="speaker-grid">
+                        <div className="speaker-card glass-effect">
+                            <img src={asset("panelist 1.jpg")} alt="Panelist Photo"
+                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
+                            <h3>Jnan Yalla</h3>
+                            <p className="speaker-title">CTO- DataTeach.AI<br />
+                            IBM Qiskit Advocate<br />
+                            QML Researcher</p>
+                        </div>
+                        <div className="speaker-card glass-effect">
+                            <img src={asset("panelist 2.jpg")} alt="Panelist Photo"
+                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
+                            <h3>David Kreplin</h3>
+                            <p className="speaker-title">Professor of Applied quantum computing at Heilbronn University<br />
+                            Senior Scientist for Quantum Computing at Fraunhofer IPA</p>
+                        </div>
+                        <div className="speaker-card glass-effect">
+                            <img src={asset("panelist 3.jpg")} alt="Panelist Photo"
+                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
+                            <h3>Jay Shah</h3>
+                            <p className="speaker-title">Founder and Lead Developer at Quantum Reinforcement Learning (QRL)<br />
+                            Quantum Machine Learning Developer at BosonQ Psi ( BQP)</p>
+                        </div>
+                        <div className="speaker-card glass-effect">
+                            <img src={asset("panelist 4.jpg")} alt="Panelist Photo"
+                                className="speaker-image" width="160" height="160" loading="lazy" decoding="async" />
+                            <h3>Amara Graps</h3>
+                            <p className="speaker-title">FirstQFM<br />
+                            Senior Scientist, Planetary Science Institute</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Timeline />
+
+        <section id="section-contact" className="fade-in-up">
+            <div className="container text-center max-w-4xl">
+                <h2 className="section-title animated-gradient">Get In Touch</h2>
+                <p className="contact-subtitle">
+                    Have questions or want to get involved? We'd love to hear from you. Reach out to us through any of
+                    the
+                    channels below.
+                </p>
+                <div className="contact-card glass-effect">
+                    <div className="contact-info">
+                        <div className="contact-item">
+                            <h3>Email Us</h3>
+                            <a href="mailto:ieee.sb@hyderabad.bits-pilani.ac.in">ieee.sb@hyderabad.bits-pilani.ac.in</a>
+                        </div>
+                        <div className="contact-item">
+                            <h3>Follow Us</h3>
+                            <div className="social-icons">
+                                <a aria-label="IEEE BPHC on LinkedIn" href="https://www.linkedin.com/company/ieee-student-branch-bits-pilani-hyderabad-campus/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fillRule="evenodd"
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                            clipRule="evenodd" />
+                                    </svg>
+                                </a>
+                                <a aria-label="IEEE BPHC on Instagram" href="https://www.instagram.com/ieee.bphc/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664 4.771 4.919 4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="section-footer">
+        <div className="container">
+            <p>&copy; 2026 Quantum Feynatics, IEEE BPHC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    </>
+  );
+}

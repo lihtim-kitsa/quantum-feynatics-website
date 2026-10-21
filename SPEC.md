@@ -1,5 +1,12 @@
 # Quantum Feynatics visual redesign
 
+## Quantumverse Vol. 4.0 — Next.js / TypeScript correction
+- Goal: Implement the original Quantumverse UI/UX in Next.js App Router and strict TypeScript; replace the independent redesign as the active app.
+- Scope: Port the complete original HTML to native TSX sections, reuse the exact original stylesheet, fonts, assets, section order, responsive breakpoints, gradient/background animations, cursor, mobile menu, and timeline accordion. Change edition branding to Vol. 4.0. Preserve previous-edition people/programme content while identifying it as provisional; never activate the old registration link for the new edition.
+- Files: src/app/page.tsx, src/app/layout.tsx, src/app/quantumverse.css, src/app/components/*, src/app/data/*, next.config.ts, tsconfig.json, next-env.d.ts, package.json/lock, compatibility entry pages, README.md, .gitignore. Next.js routes accept only .ts/.tsx so the retained Vite JSX pages do not become Next.js routes.
+- Routes: Next.js renders the microsite at / and /quantumverse/v4; old Vol. 4.0 HTML entries forward to the Next.js route. Preserve the original static Vol. 3.0 archive and existing Vite source; legacy scripts still run the main club website.
+- Acceptance: Original visual design and all sections preserved in TSX (no embedded HTML or iframe); strict typecheck, lint, Next.js production build; optional static export for GitHub Pages; desktop/mobile visual comparisons and menu/accordion/scroll tests; cleanup for client animation effects; no new invented event details. Commit the finished change locally.
+
 ## Quantumverse Vol. 4.0
 - Goal: Create a complete, improved successor to the existing Vol. 3.0 event microsite.
 - Scope: Independent static page with responsive orbital artwork, event overview, workshops/hackathon, accessible programme tabs, speakers, team, partners, FAQs, and contact. Keep Vol. 3.0 intact. Unconfirmed edition details remain explicitly TBA; use the verified organizer email for interest and partnership enquiries.
