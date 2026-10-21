@@ -1,7 +1,7 @@
 # Quantum Feynatics visual redesign
 
 ## Vol. 4.0 organizers
-- Replace the archived team with main-site members 1, 2, and 6–10: Mithil Astik, Mansee Sukant Rana, Anvesh Vohra, Spandan Mishra, Kaushik Karma, Srinandan Daparthi, and Rutwek Reddy Lella. Use their main-site portraits, show both leads together, and label the team Vol. 4.0.
+- Replace the archived team with main-site members 1, 2, and 6–10: Mithil Astik, Mansee Sukant Rana, Anvesh Vohra, Spandan Mishra, Kaushik Karma, Srinandan Daparthi, and Rutwek Reddy Lella. Use their main-site portraits, show all seven equally in one grid with the Organizer label, and label the team Vol. 4.0.
 - Files: EventPage.tsx, organizers.ts, quantumverse.css, README.md. Acceptance: exactly seven requested members, correct portraits (initials for Kaushik, whose source portrait is missing), no historical-team notice; lint/typecheck/build, then publish to main.
 
 ## Publish Quantumverse and update the main site

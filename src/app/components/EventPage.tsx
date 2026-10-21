@@ -161,18 +161,8 @@ export default function EventPage() {
         <section id="section-team" className="fade-in-up">
             <div className="container text-center max-w-6xl">
                 <h2 className="section-title animated-gradient section-title-margin">Meet the Vol. 4.0 Organizing Team</h2>
-                <div className="lead-organizer">
-                    {organizers.slice(0, 2).map((member) => (
-                        <div className="team-member-card" key={member.name}>
-                            <img src={`${basePath}/images/${member.image}`} alt={member.name} className="lead-image"
-                                width="160" height="160" loading="lazy" decoding="async" />
-                            <h3>{member.name}</h3>
-                            <p>{member.role}</p>
-                        </div>
-                    ))}
-                </div>
                 <div className="team-grid">
-                    {organizers.slice(2).map((member) => (
+                    {organizers.map((member) => (
                         <div className="team-member-card" key={member.name}>
                             {member.image ? (
                                 <img src={`${basePath}/images/${member.image}`} alt={member.name}
