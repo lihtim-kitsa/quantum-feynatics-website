@@ -1,5 +1,9 @@
 # Quantum Feynatics visual redesign
 
+## Vol. 4.0 organizers
+- Replace the archived team with main-site members 1, 2, and 6–10: Mithil Astik, Mansee Sukant Rana, Anvesh Vohra, Spandan Mishra, Kaushik Karma, Srinandan Daparthi, and Rutwek Reddy Lella. Use their main-site portraits, show both leads together, and label the team Vol. 4.0.
+- Files: EventPage.tsx, organizers.ts, quantumverse.css, README.md. Acceptance: exactly seven requested members, correct portraits (initials for Kaushik, whose source portrait is missing), no historical-team notice; lint/typecheck/build, then publish to main.
+
 ## Publish Quantumverse and update the main site
 - Goal: Push the completed event microsite to origin/main and expose it from the main club Events page without replacing the club homepage.
 - Scope/files: Restore / and /events through a typed Next.js wrapper around the existing club app; isolate event CSS/metadata in the /quantumverse/v4 layout. Update Events copy/link, remove the superseded QFF placeholder, and update sitemap/README. Set Vercel's framework/output to Next.js and use its production domain for canonical metadata. Preserve the archived Vol. 3.0 page.

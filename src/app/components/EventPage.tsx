@@ -2,7 +2,8 @@ import Header from "./Header";
 import Timeline from "./Timeline";
 import SiteEffects from "./SiteEffects";
 import WormholeBackground from "./WormholeBackground";
-import { asset } from "../data/site";
+import { asset, basePath } from "../data/site";
+import { organizers } from "../data/organizers";
 import { programme } from "../data/programme";
 
 const speakerSessions = programme.flatMap((day) =>
@@ -34,7 +35,7 @@ export default function EventPage() {
                 <h2 className="hero-subtitle">QML &amp; Qiskit with Experts from IBM</h2>
                 <p className="hero-date">📅 23–25 October 2026</p>
                 <p className="hero-date">📍BITS Pilani Hyderabad Campus</p>
-                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Team and sponsors shown below are from Vol. 3.0 for reference.</p>
+                <p className="edition-notice">Expert talks and hands-on sessions, 23–25 October 2026. Explore the day-wise programme below. Sponsors shown below are from Vol. 3.0 for reference.</p>
                 <div className="hero-cta">
                     <a href="#section-contact"
                         className="hero-register-button">
@@ -159,67 +160,30 @@ export default function EventPage() {
 
         <section id="section-team" className="fade-in-up">
             <div className="container text-center max-w-6xl">
-                <h2 className="section-title animated-gradient section-title-margin">Meet the Vol. 3.0 Core Team
-                </h2>
-
+                <h2 className="section-title animated-gradient section-title-margin">Meet the Vol. 4.0 Organizing Team</h2>
                 <div className="lead-organizer">
-                    <div className="team-member-card">
-                        <img src={asset("Mithil_Astik.jpg")} alt="Lead Organizer" className="lead-image" width="160"
-                            height="160" loading="lazy" decoding="async" />
-                        <h3>Mithil Astik</h3>
-                        <p>Lead Organizer</p>
-                    </div>
+                    {organizers.slice(0, 2).map((member) => (
+                        <div className="team-member-card" key={member.name}>
+                            <img src={`${basePath}/images/${member.image}`} alt={member.name} className="lead-image"
+                                width="160" height="160" loading="lazy" decoding="async" />
+                            <h3>{member.name}</h3>
+                            <p>{member.role}</p>
+                        </div>
+                    ))}
                 </div>
-
                 <div className="team-grid">
-                    <div className="team-member-card">
-                        <img src={asset("Mansee.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Mansee Sukant Rana</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("pratyush.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Pratyush Jha</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("SreePragnya.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Sree Pragnya Ramachandrula</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("cri.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Cris Varshith Dantham Joseph</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("Anshul-Rath.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Anshul Rath</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("Mandar-Kirkire.jpg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Mandar Kirkire</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("Aaditya-Rajput_edited.jpg")} alt="Team Member" width="128" height="128"
-                            loading="lazy" decoding="async" />
-                        <h3>Aaditya Rajput</h3>
-                        <p></p>
-                    </div>
-                    <div className="team-member-card">
-                        <img src={asset("Rajas-Bamb.jpeg")} alt="Team Member" width="128" height="128" loading="lazy"
-                            decoding="async" />
-                        <h3>Rajas Bamb</h3>
-                        <p></p>
-                    </div>
+                    {organizers.slice(2).map((member) => (
+                        <div className="team-member-card" key={member.name}>
+                            {member.image ? (
+                                <img src={`${basePath}/images/${member.image}`} alt={member.name}
+                                    width="128" height="128" loading="lazy" decoding="async" />
+                            ) : (
+                                <div className="organizer-initials" aria-hidden="true">KK</div>
+                            )}
+                            <h3>{member.name}</h3>
+                            <p>{member.role}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

@@ -632,6 +632,8 @@ section {
 .lead-organizer {
     margin-bottom: 4rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     justify-content: center;
 }
 
@@ -1445,4 +1447,18 @@ button:focus-visible {
         grid-template-columns: 1fr;
         gap: 0.15rem;
     }
+}
+
+.organizer-initials {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 1rem;
+    border: 2px solid var(--color-purple-medium);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #291548, #111b3d);
+    color: var(--color-purple-light);
+    font-family: var(--font-space);
+    font-size: 2rem;
 }
