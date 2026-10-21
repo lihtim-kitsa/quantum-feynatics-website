@@ -1,5 +1,11 @@
 # Quantum Feynatics visual redesign
 
+## Quantumverse Vol. 4.0
+- Goal: Create a complete, improved successor to the existing Vol. 3.0 event microsite.
+- Scope: Independent static page with responsive orbital artwork, event overview, workshops/hackathon, accessible programme tabs, speakers, team, partners, FAQs, and contact. Keep Vol. 3.0 intact. Unconfirmed edition details remain explicitly TBA; use the verified organizer email for interest and partnership enquiries.
+- Files: public/quantumverse/v4.html, v4.css, v4.js, quantumverse.html compatibility entry; src/pages/EventsPage.jsx; public/quantumverse/sitemap.xml and robots.txt.
+- Acceptance: Existing main site and previous edition work; event link opens Vol. 4.0; keyboard/mobile navigation, tabs, FAQ, reduced motion work; no stale registration claims or invented commitments; unique metadata, canonical, OG and organization JSON-LD; no new dependencies; lint/build and desktop/mobile browser checks pass. Lighthouse target 90+, measured only if tooling available.
+
 ## Home navigation and smooth scrolling
 - Goal: Home and logo always return to the hero, including repeated clicks on the home route; animate section navigation and wheel scrolling.
 - Files: App.jsx, Header.jsx, Hero.jsx, index.css. Reuse Lenis/AOS; no dependencies.

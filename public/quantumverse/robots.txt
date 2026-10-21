@@ -1,0 +1,4 @@
+# For root deployments, copy these directives into the host root robots.txt.
+User-agent: *
+Allow: /
+Sitemap: https://ieee-sb-bits-hyd.github.io/quantum-feynatics/quantumverse/sitemap.xml

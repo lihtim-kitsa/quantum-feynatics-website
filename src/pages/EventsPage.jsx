@@ -14,6 +14,22 @@ const EventsPage = () => {
 
           <div className="event-item border-bottom" data-aos="fade-up">
             <div className="event-meta">
+              <span className="mono text-muted">DATES TBA</span>
+              <span className="mono text-muted">VOL. 4.0</span>
+            </div>
+            <div className="event-content">
+              <h2>Quantumverse Vol. 4.0</h2>
+              <p className="text-muted">Beyond the classical. Explore the next chapter of Quantumverse: hands-on learning, community conversations, and a quantum hackathon. Programme and registration details coming soon.</p>
+            </div>
+            <div className="event-action">
+              <a href="/quantumverse/v4.html" className="btn-minimal">
+                EXPLORE VOL. 4.0 ↗
+              </a>
+            </div>
+          </div>
+
+          <div className="event-item border-bottom" data-aos="fade-up">
+            <div className="event-meta">
               <span className="mono text-muted">NOV 7-9 / 2025</span>
               <span className="mono text-muted">BPHC</span>
             </div>
@@ -22,7 +38,7 @@ const EventsPage = () => {
               <p className="text-muted">A unique three-day event hosted by Quantum Feynatics and IBM Quantum. Combining hands-on workshops with a competitive 12-hour hackathon.</p>
             </div>
             <div className="event-action">
-              <a href="https://ieee-sb-bits-hyd.github.io/quantum-feynatics/quantumverse/quantumverse.html" className="btn-minimal">
+              <a href="/quantumverse/index.html" className="btn-minimal">
                 VIEW EVENT ↗
               </a>
             </div>
