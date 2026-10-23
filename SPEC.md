@@ -1,5 +1,10 @@
 # Quantum Feynatics visual redesign
 
+## Vol. 4.0 Day 2 timing update
+- Goal: Apply the supplied message to Day 2, which contains the revision and 4–6 pm session.
+- Scope/files: SPEC.md and src/app/data/programme.ts. Remove Day 1 Revision and Day 2 Notebook; start at 10 am, identify Kaushik Karma for 10–11 am, shift SDK/lunch/protocol sessions one hour later, and preserve QML Hands-on at 4–6 pm. Other days stay unchanged.
+- Acceptance: SDK runs 10 am–1 pm with Kaushik leading its first hour; lunch 1–2 pm, superdense coding 2–3 pm, teleportation 3–4 pm; no Day 2 revision/notebook; lint, typecheck, and build pass.
+
 ## Vol. 4.0 organizers
 - Replace the archived team with main-site members 1, 2, and 6–10: Mithil Astik, Mansee Sukant Rana, Anvesh Vohra, Spandan Mishra, Kaushik Karma, Srinandan Daparthi, and Rutwek Reddy Lella. Use their main-site portraits, show all seven equally in one grid with the Organizer label, and label the team Vol. 4.0.
 - Files: EventPage.tsx, organizers.ts, quantumverse.css, README.md. Acceptance: exactly seven requested members, correct portraits (initials for Kaushik, whose source portrait is missing), no historical-team notice; lint/typecheck/build, then publish to main.

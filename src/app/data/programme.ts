@@ -19,7 +19,7 @@ export interface ProgrammeDay {
   sessions: Session[];
 }
 
-// Transcribed from the supplied DAY 1–3 screenshots. All times are IST.
+// Based on the supplied DAY 1–3 screenshots and Day 2 timing update. All times are IST.
 // Grouped topics share the source time block; no individual durations are inferred.
 export const programme: ProgrammeDay[] = [
   {
@@ -44,10 +44,10 @@ export const programme: ProgrammeDay[] = [
     dateTime: "2026-10-24",
     tone: "blue",
     sessions: [
-      { title: "Day 1 Revision", time: "9–10 am", description: "Revisit qubits, the essential mathematics, circuit building, and the Qiskit workflow before moving into new topics." },
       {
         title: "Qiskit SDK",
-        time: "10 am–noon",
+        time: "10 am–1 pm",
+        presenter: "Kaushik Karma (10–11 am)",
         topics: [
           { title: "Aer", description: "Explore circuit simulation and compare ideal simulations with simulations that include noise." },
           { title: "Sampler Primitives", description: "Sample measurement outcomes from circuits and interpret the resulting outcome distributions." },
@@ -55,10 +55,9 @@ export const programme: ProgrammeDay[] = [
           { title: "Transpilation, Pass Managers, Qiskit Runtime and Backends", description: "Understand how circuits are adapted to a target backend, how pass managers organize circuit transformations, and where Qiskit Runtime fits into execution." },
         ],
       },
-      { title: "Lunch", time: "Noon–1 pm" },
-      { title: "Superdense Coding", time: "1–2 pm", description: "Follow a circuit that uses a shared entangled pair to encode and communicate two classical bits by sending one qubit." },
-      { title: "Quantum Teleportation", time: "2–3 pm", description: "Walk through transferring a quantum state using shared entanglement, measurement, and classical communication." },
-      { title: "Notebook", time: "3–3:30 pm", description: "Reinforce the SDK and communication-protocol sessions through notebook exercises and circuit experiments." },
+      { title: "Lunch", time: "1–2 pm" },
+      { title: "Superdense Coding", time: "2–3 pm", description: "Follow a circuit that uses a shared entangled pair to encode and communicate two classical bits by sending one qubit." },
+      { title: "Quantum Teleportation", time: "3–4 pm", description: "Walk through transferring a quantum state using shared entanglement, measurement, and classical communication." },
       { title: "QML Hands-on", time: "4–6 pm", presenter: "Archit" },
     ],
   },
